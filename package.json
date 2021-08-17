@@ -1,5 +1,27 @@
 {
+  "name": "ginasomara.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "node": "^16.6.1"
-  }
+    "engine": "^1.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "node": "^16.6.1",
+    "node-bin-setup": "^1.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GinaSomara/GinaSomara.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GinaSomara/GinaSomara.github.io/issues"
+  },
+  "homepage": "https://github.com/GinaSomara/GinaSomara.github.io#readme"
 }
