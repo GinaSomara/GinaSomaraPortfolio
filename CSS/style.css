@@ -1,0 +1,327 @@
+/* GENERAL Set Up */
+*,
+*:before,
+*:after,
+/* *:hover,  */
+{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 200; 
+    --fw-bold: 900;
+
+    --color-light:  #f1eef5c5;
+    --color-light-transparent: #f1eef594;
+    --color-darker-transparent: #f1eef5ad;
+    --color-dark: #6d6b6b;
+    --color-accent: #c4acf1d7;
+    --color-accent2: rgba(67, 209, 214, 0.74);
+    --color-accent2-FadeOut: rgba(67, 209, 214, 0.247);
+    --color-accent2-XtremFadeOut: rgba(67, 209, 214, 0.13);
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.6rem;
+    --fs-body: 1rem;
+    --fs-p: 1.25rem;
+
+    --box-shad: 0.25em 0.25em 0.7em rgba(73, 73, 73, 0.377);
+    --text-shad: 1px 1px #180505;
+}
+
+/* #4: @media */
+@media (min-width: 800px)
+{
+    :root
+    {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3
+{
+    line-height: 1;
+    margin: 0;
+    position: relative;
+}
+
+p
+{
+    position: relative;
+    font-size: var(--fs-p);
+}
+
+h1 { font-size: var(--fs-h1);}
+h2 { font-size: var(--fs-h2);}
+h3 { font-size: var(--fs-h3); 
+     font-weight: var(--fw-reg);}
+
+img
+{
+    display: block;
+    max-width: 100%;
+}
+
+body
+{
+    background: var(--color-light);
+    color: var(--color-dark);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
+    line-height: 1.6;
+}
+
+/* SECTIONS */
+section
+{
+    padding: 5em 2em;
+}
+
+.section__title 
+{
+    padding-bottom: 0.2em;
+    font-family: var(--fw-reg);
+} 
+
+.section__title--intro
+{
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong
+{
+    display: block;
+    font-weight: var(--fw-bold);
+} 
+
+.section__subtitle
+{
+    font-size: var(--fs-h3);
+    color: var(--color-black);
+}
+
+.section__subtitle--intro 
+{
+    background: var(--color-accent2);
+    padding: .25em 0.2em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.4em;
+    font-weight: var(--fw-reg);
+}
+
+.section__subtitle--aboutMe,
+.section__subtitle--work,
+.section__subtitle--contact
+{
+    color: var(--color-black);
+    padding: .25em 0.2em;
+    position: relative;
+    font-family: var(--ff-secondary);
+    margin-bottom: 0.4em;
+    font-weight: var(--fw-reg);
+    /* background-image: linear-gradient(to right, rgba(67, 209, 214, 0.247), rgba(67, 209, 214, 0.74), rgba(67, 209, 214, 0.247)); */
+    /* background-image: linear-gradient(to right, var(--color-accent2-XtremFadeOut), var(--color-accent2-FadeOut),
+                                                var(--color-accent2), var(--color-accent2-FadeOut), var(--color-accent2-XtremFadeOut)); */
+}
+
+/* .section__subtitle--aboutMe
+{
+    margin-bottom: 1em;
+} */
+
+.about-me,
+.my-work,
+.contact-me
+{
+    background-size: cover;
+    background-color: var(--color-light);
+    height: 37em;
+    text-align: center;
+    padding-top: 5em;
+}
+
+.my-work,
+.contact-me
+{
+padding-top: 5em;
+}
+
+.separation-bar
+{
+    background-color: var(--color-accent);
+    height: 5px;
+    width: 40%;
+    display: block;
+    margin: auto;   
+}
+
+@media (min-width: 600px)
+{
+    .section__subtitle--intro
+    {
+        align-self: start;
+        /* grid-column: -1 / 1; */
+        /* #7) grid-row */
+        grid-row: 2;
+        text-align:  right;
+        position: absolute;
+        left: -1em;
+        right: -0.3em;
+    }
+}
+
+
+/* HEADER */
+nav
+{
+    display: none;
+}
+
+/* INTRO */
+.intro
+{
+    position: relative;
+}
+
+.intro__img
+{
+    box-shadow: var(--box-shad);
+}
+
+@media (min-width: 600px)
+{
+    .intro
+    {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        /* #6: grid template/grid areas*/
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;     
+    }
+
+    .intro__img
+    {
+        position: relative;
+        /* #8) z-index */
+        z-index: 2;
+        grid-area: img;
+        min-width: 250px;
+    }
+}
+
+/* MY WORK */
+.my-work
+{
+    background-image: url(../images/KeyBoard3.png);
+}
+
+.flex
+{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+
+.my_project
+{
+    background-color: var(--color-light-transparent);
+    padding: 4em;
+    margin: 1em;
+    border-radius: 10px;
+    width: 25em;
+}
+
+.position1 { order: 1;}
+.position2 { order: 2;}
+.position3 { order: 3;}
+.position4 { order: 4;}
+
+.click
+{
+    text-decoration: none;
+    color: black;
+}
+
+.click::before
+{
+    position: absolute; 
+	left: 0;
+	bottom: 0;
+    top: 0;
+	/* content: "";
+	display: block; */
+	width: 100%;
+	height: 100%;
+	background-color:whitesmoke;
+	transform-origin: 0 bottom 0;
+	transform: scaleY(0);
+	transition: .4s ease-out;
+}
+
+.click:hover::before
+{
+    transform: scaleY(1);
+}
+
+
+/* ABOUT ME */
+.about-me
+{
+    background-image: url(../images/AboutMeFaded.png);
+    color: var(--color-dark);
+    position: relative;
+}
+
+.info-Section-aboutMe
+{
+    color: black;
+    background-color: var(--color-darker-transparent);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.aboutMe-left
+{
+    width: auto;
+    margin-right: 10em;
+}
+
+.aboutMe-right
+{
+    width: auto;
+    margin-left: 10em;
+}
+
+/* CONTACT ME*/
+.contact-me
+{
+    background-image: url(../images/StickyNotes.png);
+}
+
+.contact__list
+{
+    padding-top: 4em;
+    padding-left: 12em;
+}
+
+
+
+
+/*MAY NEED @Media FOR 3 SECTIONS here depending on what I want to do with
+the columns / rows for this section  */

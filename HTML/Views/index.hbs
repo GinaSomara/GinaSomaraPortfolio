@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Gina Somara Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" 
+        integrity="sha512-Yu3tDzlofwBycOX5qb6K4tGJKGD72LA/9ckyioo8plGOdLwIeESQgo+KY4M+gvBJvDguqYeweLVTIn+S/9ZC/Q==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head> 
+
+
+    <body>
+
+        <header>
+            <div class = "logo">
+                <!--INSERT PICTURE HERE-->
+                <!-- <img src="images/Intro1.png" alt="Picture of Gina Somara" class="intro__img"> -->
+            </div>
+
+            <button class = "nav-toggle" aria-label="toggle navigation">
+                <span class="tbd"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects / Experience</a></li>
+                    <li class="nav__item"><a href="#lor" class="nav__link">Letters of Recommendation</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Intro -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                He110! I am <strong>Gina Somara</strong>
+            </h1>
+
+            <p class="section__subtitle section__subtitle--intro">
+                Student of Computer Science
+            </p>
+
+            <img src="images/resize_profile_pic.jpg" alt="Picture of Gina Somara smiling" class="intro__img">
+        </section>
+
+
+        <!--Separation Bar-->
+        <hr class="separation-bar"></hr>
+
+        <!--Projects / Experience-->
+        <section class="my-work">
+            <h2 class="section__title section__subtitle--work">
+                ~ Projects ~
+            </h2>
+            
+            <div class="flex">
+
+                <!-- <div class="my_project position1"> -->
+                    <a class="my_project position1 click" href="">
+                      <h3><u>The Fountain Website</u></h3>
+                      <p>A web dev project simulating a client nighttime cocktail bar of NYC.</p>
+                    </a>
+                <!-- </div> -->
+            
+                <div class="my_project position2">
+                    <a class="click" href="">
+                      <h3><u>Enum Dictionary</u></h3>
+                      <p>A program designed to get familiar with Enum classes and Google Guava</p>
+                    </a>
+                </div>
+
+                <div class="my_project position3">
+                    <a class="click" href="">
+                      <h3><u>Blockchain</u></h3>
+                      <p>A project to get familiar with the backbone of one of my biggest passions. </p>
+                    </a>
+                </div>
+
+                <div class="my_project position4">
+                    <a class="click" href="">
+                      <h3><u>TBD</u></h3>
+                      <p>Another project coming soon. . . . Stay tuned!</p>
+                    </a>
+                </div>
+
+            </div>     
+        </section>
+
+
+         <!--Separation Bar-->
+         <hr class="separation-bar"></hr>
+
+        <!--About Me-->
+        <section class="about-me">
+            <h2 class="section__title section__subtitle--aboutMe">
+                ~ About Me ~
+            </h2>
+
+            <div class="flex">
+                    <div class="info-Section-aboutMe position4 aboutMe-right">
+                       <h3><u>Who am I</u></h3>
+                       <p>From a USAF jet engine mechanic to a committed Computer Science student. I am particularly passionate and interested in AI,
+                       Blockchain Technologies, Cryptography and Web Design. I also love trees.</p>
+                    </div>    
+
+                    <div class="info-Section-aboutMe position1 aboutMe-left">
+                        <h3><u>Why I love Computer Science</u></h3>
+                        <p>When I discovered programming through a mandatory introduction course, I was surprised with how much I loved it. I grew an appetite for 
+                        learning anything CS. And here I am, still hungry. Programming is challenging, complex, and frustrating. But I have never had so much fun 
+                        getting frustrated!  </p>
+                    </div>
+                    
+            </div> 
+        </section>
+
+
+        <!--Separation Bar-->
+        <hr class="separation-bar"></hr>
+
+        <!--Contact Me-->
+        <section class="contact-me">
+            <h2 class="section__title section__subtitle--contact">
+                ~ Contact Me ~
+            </h2>
+
+            <div class="info-Section-contact"> <!--All font awesome icons here-->
+
+                <div class="contact__list flex">
+                    <div class="contact position1">
+                        <a href="https://www.linkedin.com/in/gina-somara-a61bb3199/" target="_blank" class="nav__link">
+                            <i class="fab fa-linkedin stefanvdnight fa-4x"></i> 
+                        </a>
+                    </div>
+                    <div class="contact position2">
+                        <a href="#about" target="_blank" class="nav__link">
+                            <i class="far fa-envelope fa-4x"></i>
+                        </a>
+                    </div>
+                    <div class="contact position3">
+                        <a href="https://www.facebook.com/gina.somara" target="_blank" class="nav__link">
+                            <i class="fab fa-facebook-square fa-4x"></i>  
+                        </a>
+                    </div>
+                </div>
+                
+            </div> 
+        </section>
+
+        <section class="seperation-bar" id="bar">
+        </section>
+    </body>
+
+
+    
+    <footer>
+        <div class="footer">
+            <h3>Thank you for your time! </h3>
+        </div>
+
+    </footer>
+
+</html>    
