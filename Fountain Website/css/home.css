@@ -6,16 +6,11 @@ html
 
 body 
 {
-    background-image: url(images/FountainWebsite/Use_Background.png);
+    background-image: url(../images/Use_Background.png);
     background-size: cover; 
     background-repeat: no-repeat;
 }
 
-/*WHEN using margin-whatever, we also need to add in a width and 
-possibly a height because the contianer class needs to know
-what area of the web page to cover.... seems kinda of redunet since
-the header, nav, main, and footer tags are all inssde the div tags
-already but..... */
 
 .container
 {

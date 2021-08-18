@@ -7,7 +7,7 @@ html
 body
 {
     text-align: center;
-    background-image: url(images/FountainWebsite/Video_HomePage.png);
+    background-image: url(../images/Video_HomePage.png);
     background-size: cover;
 }
 
