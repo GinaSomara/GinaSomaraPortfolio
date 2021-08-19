@@ -1,11 +1,11 @@
 /* GENERAL Set Up */
-*,
+/* *,
 *:before,
-*:after,
+*:after
 /* *:hover,  */
-{
+/* {
     box-sizing: border-box;
-}
+} */ */
 
 :root
 {

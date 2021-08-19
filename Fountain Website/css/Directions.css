@@ -1,9 +1,10 @@
+/* === GENERAL set up=== */
 html
 {
     height: auto;
 }
 
-
+/* === BODY specifics === */
 body
 {
     text-align: center;
@@ -11,7 +12,10 @@ body
     background-size: cover;
 }
 
-
+.AboveNav
+{
+    height: 30px;
+}
 nav
 {
     margin-left: auto;
@@ -22,23 +26,6 @@ nav
     padding-bottom: 20px;
     background-color: rgba(119, 67, 204, 0.534);
 }
-
-
-a
-{
-    color: whitesmoke;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-.AboveNav
-{
-    height: 30px;
-}
-
 
 .directions
 {
@@ -52,4 +39,14 @@ footer
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+}
+
+/* === TYPOGRAPHY === */
+a
+{
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
 }

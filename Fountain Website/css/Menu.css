@@ -1,32 +1,16 @@
-html
+/* === GENERAL set up=== */
+.box1
 {
     height: auto;
 }
 
-
+/* === BODY specifics === */
 body
 {
     background-color: black;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-}
-
-
-nav
-{
-    height: 50px;  
-    padding-top: 57px;
-}
-
-
-a
-{
-    color: whitesmoke;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 
@@ -37,59 +21,11 @@ header
     padding-bottom: 150px;
 }
 
-
-.flex
+nav
 {
-    display: flex;
-    flex-direction: row;
-    align-content: stretch;
-    justify-content: space-evenly;
-    padding-top: 40px;
+    height: 50px;  
+    padding-top: 57px;
 }
-
-
-.box1
-{
-    order: 1;
-    flex: 1;
-}
-
-
-.box2
-{
-    order: 2;
-    flex: 2;
-    padding-right: 30px;
-}
-
-
-.box3
-{
-    order: 3;
-    flex: 2;
-    padding-left: 30px;
-}
-
-
-.box4
-{
-    order: 4;
-    flex: 1;
-}
-
-
-h1
-{
-    color: honeydew;
-}
-
-
-p
-{
-    font-size: 26px;
-    color: honeydew;
-}
-
 
 footer
 {
@@ -100,7 +36,61 @@ footer
 }
 
 
+/* === TYPOGRAPHY === */
+a
+{
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+h1
+{
+    color: honeydew;
+}
+
+p
+{
+    font-size: 26px;
+    color: honeydew;
+}
+
+/* === FLEX BOX === */
+.flex
+{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.box1
+{
+    order: 1;
+    flex: 1;
+}
+.box2
+{
+    order: 2;
+    flex: 2;
+    padding-right: 30px;
+}
+.box3
+{
+    order: 3;
+    flex: 2;
+    padding-left: 30px;
+}
+.box4
+{
+    order: 4;
+    flex: 1;
+}
+
+/* === ABOUT THIS WEBSITE page === */
 .developer
 {
     background-color: rgba(119, 67, 204, 0.473);
@@ -109,4 +99,19 @@ footer
     border-radius: 25px;
     padding: 2em;
     margin-bottom: 3em;
+}
+.developer p
+{
+    font-size: 23px;
+}
+.developer-note
+{
+    font-size: 17px;
+}
+
+li
+{
+    color: rgb(243, 240, 255);
+    font-size: 23px;
+    text-align: left;
 }

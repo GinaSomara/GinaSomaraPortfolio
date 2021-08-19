@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" 
+        integrity="sha512-Yu3tDzlofwBycOX5qb6K4tGJKGD72LA/9ckyioo8plGOdLwIeESQgo+KY4M+gvBJvDguqYeweLVTIn+S/9ZC/Q==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;900&display=swap" rel="stylesheet">
+
+    {{#each css}}
+        <link rel="stylesheet" href="../css/{{this}}">
+    {{/each}}
+
+    {{#each js}}
+        <script defer src="../js/{{this}}"></script>
+    {{/each}}
+</head> 
+
+<body>
+
+     {{! -- NAV bar -- }}
+    <button class = "nav-toggle" aria-label="toggle navigation">
+        <span class="tbd"></span>
+    </button>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">Projects / Experience</a></li>
+            <li class="nav__item"><a href="#lor" class="nav__link">Letters of Recommendation</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">Contact Me</a></li>
+        </ul>
+    </nav>
+    {{! -- END NAV bar -- }}
+
+
+    {{{body}}}
+
+
+</body>

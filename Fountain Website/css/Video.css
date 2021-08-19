@@ -1,16 +1,20 @@
+/* === GENERAL set up=== */
 html
 {
     height: 100%;
 }
 
-
+/* === BODY specifics === */
 body
 {
     background-image: url(../images/Video_HomePage.png);
     background-size: cover;
 }
 
-
+.AboveNav
+{
+    height: 0px;
+}
 nav
 {
     background-color: rgba(119, 67, 204, 0.473);
@@ -22,7 +26,33 @@ nav
     padding-bottom: 20px;
 }
 
+header
+{
+    height: 200px;
+}
 
+.videoHeading
+{
+    background-color: rgba(119, 67, 204, 0.473);
+}
+
+main
+{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 135px;
+}
+
+footer
+{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/* === TYPOGRAPHY === */
 a
 {
     color: honeydew ;
@@ -32,48 +62,11 @@ a
     padding-right: 10px;
 }
 
-
-.AboveNav
-{
-    height: 0px;
-}
-
-
-header
-{
-    height: 200px;
-}
-
-
-.videoHeading
-{
-    background-color: rgba(119, 67, 204, 0.473);
-}
-
-
 p
 {
     font-size: 50px;
     color: honeydew;
     opacity: 2.0;
     text-shadow: 2px 2px 4px #000000;
-    text-align: center;
-}
-
-
-main
-{
-    padding-top: 100px;
-    text-align: center;
-    padding-bottom: 135px;
-}
-
-
-footer
-{
-    padding-top: 20px;
-    padding-bottom: 5px;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
 }
