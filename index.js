@@ -10,8 +10,8 @@ app.set('view engine', 'handlebars');
 app.engine(
     "hbs",
     handlebars({
-      layoutsDir: path.join(__dirname, "views/layouts"),
-      partialsDir: path.join(__dirname, "views/partials"), 
+      layoutsDir: path.join(__dirname, "/public/views/layouts"),
+      partialsDir: path.join(__dirname, "/public/views/partials"), 
       extname: ".hbs", //expected file extension for handlebars files
       defaultLayout: "layout" //default layout for app, general template for all pages in app
     })
@@ -20,12 +20,17 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 app.use("/public", express.static(path.join(__dirname, "public")));
 
-app.use(express.static('images'));
+// app.use(express.static('public'));
+
+// Route to display static src images
+app.get("/static", (req, res) => {
+    res.render("static");
+});
 
 
 //===== .GET PAGES =====//
-router.get('/', (req, res, next) => { 
-    res.render('index', {title: 'Home Page', css:['style.css']});
+app.get('/', (req, res, next) => { 
+    res.render('../public/views/index', {title: 'Home Page', css:['../public/css/style.css']});
 });
 app.use('/', router);
 
