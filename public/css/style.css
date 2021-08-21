@@ -1,12 +1,12 @@
-/* GENERAL Set Up */
-/* *,
-*:before,
-*:after
-/* *:hover,  */
-/* {
-    box-sizing: border-box;
-} */ */
 
+/* ===== GENERAL Set Up ===== */
+*,
+*:before,
+*:after,
+*:hover 
+{
+    box-sizing: border-box;
+}
 :root
 {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -34,7 +34,6 @@
     --text-shad: 1px 1px #180505;
 }
 
-/* #4: @media */
 @media (min-width: 800px)
 {
     :root
@@ -46,7 +45,8 @@
     }
 }
 
-/* TYPOGRAPHY */
+
+/* ===== TYPOGRAPHY ===== */x
 h1,
 h2,
 h3
@@ -55,17 +55,16 @@ h3
     margin: 0;
     position: relative;
 }
-
+h1 { font-size: var(--fs-h1);}
+h2 { font-size: var(--fs-h2);}
+h3 { font-size: var(--fs-h3); 
+     font-weight: var(--fw-reg);}
+     
 p
 {
     position: relative;
     font-size: var(--fs-p);
 }
-
-h1 { font-size: var(--fs-h1);}
-h2 { font-size: var(--fs-h2);}
-h3 { font-size: var(--fs-h3); 
-     font-weight: var(--fw-reg);}
 
 img
 {
@@ -75,14 +74,14 @@ img
 
 body
 {
-    background: var(--color-light);
+    background-color: var(--color-light);
     color: var(--color-dark);
     font-family: var(--ff-primary);
     font-weight: var(--fw-reg);
     line-height: 1.6;
 }
 
-/* SECTIONS */
+/* ===== SECTIONS ===== */
 section
 {
     padding: 5em 2em;
@@ -98,28 +97,30 @@ section
 {
     font-weight: var(--fw-reg);
 }
-
 .section__title--intro strong
 {
     display: block;
     font-weight: var(--fw-bold);
 } 
+.section__title--intro
+{
+    /*needed to override margin by normalize.css*/
+    margin: 0 !important;   
+}
 
 .section__subtitle
 {
     font-size: var(--fs-h3);
     color: var(--color-black);
 }
-
 .section__subtitle--intro 
 {
-    background: var(--color-accent2);
+    background-color: var(--color-accent2);   
     padding: .25em 0.2em;
     font-family: var(--ff-secondary);
     margin-bottom: 0.4em;
     font-weight: var(--fw-reg);
 }
-
 .section__subtitle--aboutMe,
 .section__subtitle--work,
 .section__subtitle--contact
@@ -135,10 +136,6 @@ section
                                                 var(--color-accent2), var(--color-accent2-FadeOut), var(--color-accent2-XtremFadeOut)); */
 }
 
-/* .section__subtitle--aboutMe
-{
-    margin-bottom: 1em;
-} */
 
 .about-me,
 .my-work,
@@ -150,7 +147,6 @@ section
     text-align: center;
     padding-top: 5em;
 }
-
 .my-work,
 .contact-me
 {
@@ -159,10 +155,10 @@ padding-top: 5em;
 
 .separation-bar
 {
-    background-color: var(--color-accent);
-    height: 5px;
+    /* background-color: var(--color-accent);
+    height: 5px; */
     width: 40%;
-    display: block;
+    /* display: block; */
     margin: auto;   
 }
 
@@ -171,8 +167,6 @@ padding-top: 5em;
     .section__subtitle--intro
     {
         align-self: start;
-        /* grid-column: -1 / 1; */
-        /* #7) grid-row */
         grid-row: 2;
         text-align:  right;
         position: absolute;
@@ -182,18 +176,11 @@ padding-top: 5em;
 }
 
 
-/* HEADER */
-nav
-{
-    display: none;
-}
-
-/* INTRO */
+/* ===== INTRO ===== */
 .intro
 {
     position: relative;
 }
-
 .intro__img
 {
     box-shadow: var(--box-shad);
@@ -207,7 +194,6 @@ nav
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
-        /* #6: grid template/grid areas*/
         grid-template-areas:
             "img title"
             "img subtitle";
@@ -217,23 +203,25 @@ nav
     .intro__img
     {
         position: relative;
-        /* #8) z-index */
         z-index: 2;
         grid-area: img;
         min-width: 250px;
     }
 }
 
-/* MY WORK */
+
+/* ===== MY WORK ===== */
 .my-work
 {
     background-image: url(../images/KeyBoard3.png);
+    background-size: cover;
 }
 
 .flex
 {
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     align-content: stretch;
     justify-content: space-evenly;
 }
@@ -241,10 +229,10 @@ nav
 .my_project
 {
     background-color: var(--color-light-transparent);
-    padding: 4em;
+    padding: 2em;
     margin: 1em;
     border-radius: 10px;
-    width: 25em;
+    width: 20em;
 }
 
 .position1 { order: 1;}
@@ -252,42 +240,50 @@ nav
 .position3 { order: 3;}
 .position4 { order: 4;}
 
+/*For individual animation when hovering over a project*/
 .click
 {
     text-decoration: none;
-    color: black;
+    position: relative;
+    transition: all .4s ease-out;
 }
-
 .click::before
 {
     position: absolute; 
 	left: 0;
-	bottom: 0;
     top: 0;
-	/* content: "";
-	display: block; */
+	content: "";
+	display: block; 
 	width: 100%;
 	height: 100%;
 	background-color:whitesmoke;
-	transform-origin: 0 bottom 0;
+	transform-origin: bottom;
 	transform: scaleY(0);
-	transition: .4s ease-out;
+	transition: all .4s ease-out;
 }
-
 .click:hover::before
 {
     transform: scaleY(1);
 }
+.click h3
+{
+    color: black;
+    padding-bottom: 5px;
+}
+.click p
+{
+    color: black;
+}
 
 
-/* ABOUT ME */
+/* ===== ABOUT ME ===== */
 .about-me
 {
     background-image: url(../images/AboutMeFaded.png);
+    background-position-x: center;
     color: var(--color-dark);
     position: relative;
 }
-
 .info-Section-aboutMe
 {
     color: black;
@@ -295,30 +291,38 @@ nav
     padding: 2em;
     border-radius: 10px;
 }
-
 .aboutMe-left
 {
     width: auto;
     margin-right: 10em;
 }
-
 .aboutMe-right
 {
     width: auto;
     margin-left: 10em;
 }
 
-/* CONTACT ME */
+
+/* ===== CONTACT ME ===== */
+.contact p
+{
+    margin-top: 1em;
+    /* background-color: var(--color-light-transparent); */
+    color: black;
+}
+
 .contact-me
 {
     background-image: url(../images/StickyNotes.png);
+    background-position-x: center;
 }
-
 .contact__list
 {
     padding-top: 4em;
     padding-left: 12em;
 }
+
+
 
 
 

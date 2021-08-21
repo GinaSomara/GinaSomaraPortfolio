@@ -1,0 +1,65 @@
+/* ===== Variables ===== */
+:root
+{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 200; 
+    --fw-bold: 900;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.6rem;
+    --fs-body: 1rem;
+    --fs-p: 1.25rem;
+
+    --box-shad: 0.25em 0.25em 0.7em rgba(73, 73, 73, 0.377);
+    --text-shad: 1px 1px #180505;
+
+    --color-darkFont: #6d6b6b;
+    --color-lightBackground:  #ded3ecd3;
+    --color-accentBlue: rgba(67, 209, 214, 0.74);
+    --color-accentPurple: #c4acf1d7;
+}
+
+
+/* ===== General Set Up ===== */
+html 
+{ 
+    height: 100%;
+    margin: 0;
+}
+
+body
+{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* ===== Sections ===== */
+.title
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, #c4acf152, rgba(67, 209, 214, 0.247), rgba(67, 209, 214, 0.74), rgba(67, 209, 214, 0.247), #c4acf152);
+    font-size: var(--fs-h1);
+    color: var(--color-darkFont);
+} 
+
+.sub-section
+{
+    background-image: linear-gradient(to right, rgba(67, 209, 214, 0.247), #c4acf152, #c4acf1a8,#c4acf1ec, #c4acf1a8, #c4acf152, rgba(67, 209, 214, 0.247));
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sub-section p
+{
+    font-size: var(--fs-p);
+}
+

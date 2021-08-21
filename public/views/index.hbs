@@ -26,7 +26,7 @@
         <hr class="separation-bar"></hr>
 
         <!--Projects / Experience-->
-        <section class="my-work">
+        <section class="my-work" id="my-work-id">
             <h2 class="section__title section__subtitle--work">
                 ~ Projects ~
             </h2>
@@ -34,32 +34,32 @@
             <div class="flex">
 
                 <!-- <div class="my_project position1"> -->
-                    <a class="my_project position1 click" href="">
-                      <h3><u>Data Structures</u></h3>
-                      <p>A web dev project simulating a client nighttime cocktail bar of NYC.</p>
+                    <a class="my_project position1 click" href="/project1">
+                        <h3><u>Data Structures</u></h3>
+                        <p>A data structure familiarization program, first coded in C++ then re-done in Java  </p>
                     </a>
                 <!-- </div> -->
             
-                <div class="my_project position2">
-                    <a class="click" href="">
+                {{!-- <div class="my_project position2"> --}}
+                    <a class="my_project position2 click" href="/project2">
                       <h3><u>The Fountain Website</u></h3>
-                      <p>A program designed to get familiar with Enum classes and Google Guava</p>
+                      <p>A website simulating a nighttime cocktail bar of NYC with overpriced drinks ;-)</p>
                     </a>
-                </div>
+                {{!-- </div> --}}
 
-                <div class="my_project position3">
-                    <a class="click" href="">
+                {{!-- <div class="my_project position3"> --}}
+                    <a class="my_project position3 click" href="/project3">
                       <h3><u>This Portfolio</u></h3>
-                      <p>A project to get familiar with the backbone of one of my biggest passions. </p>
+                      <p>All about this colorful portfolio here </p>
                     </a>
-                </div>
+                {{!-- </div> --}}
 
-                <div class="my_project position4">
-                    <a class="click" href="">
+                {{!-- <div class="my_project position4"> --}}
+                    <a class="my_project position4 click" href="/project4">
                       <h3><u>Dictionary</u></h3>
                       <p>Another project coming soon. . . . Stay tuned!</p>
                     </a>
-                </div>
+                {{!-- </div> --}}
 
             </div>     
         </section>
@@ -69,7 +69,7 @@
          <hr class="separation-bar"></hr>
 
         <!--About Me-->
-        <section class="about-me">
+        <section class="about-me" id="about-me-id">
             <h2 class="section__title section__subtitle--aboutMe">
                 ~ About Me ~
             </h2>
@@ -98,9 +98,9 @@
         <hr class="separation-bar"></hr>
 
         <!--Contact Me-->
-        <section class="contact-me">
+        <section class="contact-me" id="contact-me-id">
             <h2 class="section__title section__subtitle--contact">
-                ~ Contact Me / Information ~
+                ~ Let's Connect ~
             </h2>
 
             <div class="info-Section-contact"> <!--All font awesome icons here-->
@@ -112,9 +112,13 @@
                         </a>
                     </div>
                     <div class="contact position2">
-                        <a href="#about" target="_blank" class="nav__link">
+                        <a href="mailto:ginasomara15@gmail.com?Subject=Reservation" target="_blank" class="nav__link">
                             <i class="far fa-envelope fa-4x"></i>
                         </a>
+                        <p>
+                            Phone: (530) 748.8074  <br>
+                            Email: ginasomara15@gmail.com 
+                        </p>
                     </div>
                     <div class="contact position3">
                         <a href="https://www.facebook.com/gina.somara" target="_blank" class="nav__link">
@@ -124,9 +128,6 @@
                 </div>
                 
             </div> 
-        </section>
-
-        <section class="separation-bar" id="bar">
         </section>
 
         <footer>

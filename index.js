@@ -17,6 +17,7 @@ app.engine(
     })
 );
 app.set("views", path.join(__dirname, "views")); 
+// app.set("fountainWebsite", path.join(__dirname, "fountainWebsite"));
 app.set("view engine", "hbs");
 app.use("/public", express.static(path.join(__dirname, "public")));
 
@@ -30,25 +31,30 @@ app.get("/static", (req, res) => {
 
 //===== .GET PAGES =====//
 app.get('/', (req, res, next) => { 
-    res.render('../public/views/index', {title: 'Home Page', css:['../public/css/style.css']});
+    res.render('../public/views/index', {title: 'Home Page', css:['../public/css/style.css'], js:['../public/js/navBar.js']});
 });
 app.use('/', router);
 
 router.get('/project1', (req, res, next) => {
-    res.render('project1', {title: 'Data Structures', css:['projects.css'], js:[]});
+    res.render('../public/views/partials/project1', {title: 'Data Structures', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
 router.get('/project2', (req, res, next) => {
-    res.render('project2', {title: 'Fountain Website', css:['projects.css'], js:[]});
+    res.render('../public/views/fountainWebsite/html/home');
 });
 
 router.get('/project3', (req, res, next) => {
-    res.render('project3', {title: 'This Portfolio', css:['projects.css'], js:[]});
+    res.render('../public/views/partials/project3', {title: 'This Portfolio', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
-router.get('/project4', (res, next) => {
-    res.render('project4', {title: 'Dictionary', css:['projects.css'], js:[]});
+router.get('/project4', (req, res, next) => {
+    res.render('../public/views/partials/project4', {title: 'Dictionary', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
+
+// router.get('/contactMe', (req,res, next) => {
+//     res.redirect('/');
+//     window.scroll(0,300);
+// })
 
 app.listen(3000);
 
