@@ -40,7 +40,7 @@ router.get('/project1', (req, res, next) => {
 });
 
 router.get('/project2', (req, res, next) => {
-    res.render('../public/views/fountainWebsite/html/home');
+    res.render('../public/views/fountainWebsite/html/home', {title: 'The Fountain', css:['../public/css/fountainWebsite/home.css']});
 });
 
 router.get('/project3', (req, res, next) => {
@@ -51,10 +51,6 @@ router.get('/project4', (req, res, next) => {
     res.render('../public/views/partials/project4', {title: 'Dictionary', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
-// router.get('/contactMe', (req,res, next) => {
-//     res.redirect('/');
-//     window.scroll(0,300);
-// })
 
 app.listen(3000);
 

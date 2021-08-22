@@ -29,6 +29,11 @@ nav
 {
     height: 220px;  
     padding-top: 50px;
+    /* color: whitesmoke;   */
+}
+nav a
+{
+    color: whitesmoke;  
 }
 
 main

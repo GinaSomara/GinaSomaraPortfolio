@@ -34,7 +34,7 @@ body
 {
     background-color: var(--color-light);
     color: var(--color-dark);
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     font-weight: var(--fw-reg);
     line-height: 1.6;
     text-align: center;
@@ -61,5 +61,11 @@ body
 .sub-section p
 {
     font-size: var(--fs-p);
+    font-family: var(--ff-primary);
 }
 
+hr
+{
+    width: 40%;
+    margin: auto;   
+}

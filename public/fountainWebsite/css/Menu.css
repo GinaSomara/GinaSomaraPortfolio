@@ -89,29 +89,3 @@ p
     order: 4;
     flex: 1;
 }
-
-/* === ABOUT THIS WEBSITE page === */
-.developer
-{
-    background-color: rgba(119, 67, 204, 0.473);
-    margin-right: 5em;
-    margin-left: 5em;
-    border-radius: 25px;
-    padding: 2em;
-    margin-bottom: 3em;
-}
-.developer p
-{
-    font-size: 23px;
-}
-.developer-note
-{
-    font-size: 17px;
-}
-
-li
-{
-    color: rgb(243, 240, 255);
-    font-size: 23px;
-    text-align: left;
-}
