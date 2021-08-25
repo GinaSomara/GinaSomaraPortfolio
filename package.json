@@ -18,6 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/GinaSomara/GinaSomara.github.io.git"
   },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
