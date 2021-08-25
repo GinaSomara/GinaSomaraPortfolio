@@ -198,7 +198,7 @@ padding-top: 5em;
     font-size: var(--fs-h3);
     text-decoration: none;
     color: black;
-    /* for tranisition */
+    /* for transition */
     position: relative;
     transition: all .4s ease-out;
 }
