@@ -81,6 +81,12 @@ body
     line-height: 1.6;
 }
 
+nav
+{
+    font-family: var(--ff-secondary);
+}
+
+
 /* ===== SECTIONS ===== */
 section
 {

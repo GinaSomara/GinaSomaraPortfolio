@@ -58,10 +58,18 @@ body
     padding-bottom: 20px;
 }
 
-.sub-section p
+.sub-section p,
+.sub-section ul,
+.sub-section pre 
 {
     font-size: var(--fs-p);
     font-family: var(--ff-primary);
+    padding-left: 6em;
+    padding-right: 6em;
+}
+.sub-section ul 
+{
+    text-align: left;
 }
 
 hr
