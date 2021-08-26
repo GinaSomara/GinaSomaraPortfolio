@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 var handlebars = require("express-handlebars");
 var path = require("path");
-var router = express.Router();  //creates a router object
+
 
  //===== view ENGINE SET UP =====//
 app.set('view engine', 'handlebars');
@@ -16,12 +16,11 @@ app.engine(
       defaultLayout: "layout" //default layout for app, general template for all pages in app
     })
 );
+
 app.set("views", path.join(__dirname, "views")); 
-// app.set("fountainWebsite", path.join(__dirname, "fountainWebsite"));
 app.set("view engine", "hbs");
 app.use("/public", express.static(path.join(__dirname, "public")));
 
-// app.use(express.static('public'));
 
 // Route to display static src images
 app.get("/static", (req, res) => {
@@ -35,23 +34,23 @@ app.get('/', (req, res, next) => {
 });
 app.use('/', router);
 
-router.get('/project1', (req, res, next) => {
+app.get('/project1', (req, res, next) => {
     res.render('../public/views/partials/project1', {title: 'Data Structures', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
-router.get('/project2', (req, res, next) => {
+app.get('/project2', (req, res, next) => {
     res.render('../public/views/fountainWebsite/html/home', {title: 'The Fountain', css:['../public/css/fountainWebsite/home.css']});
 });
 
-router.get('/project3', (req, res, next) => {
+app.get('/project3', (req, res, next) => {
     res.render('../public/views/partials/project3', {title: 'This Portfolio', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
-router.get('/project4', (req, res, next) => {
+app.get('/project4', (req, res, next) => {
     res.render('../public/views/partials/project4', {title: 'Dictionary', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
 
-app.listen(3000);
+// app.listen(3000);
 
-// app.listen(process.env.PORT);
+app.listen(process.env.PORT);
