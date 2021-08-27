@@ -32,7 +32,6 @@ app.get("/static", (req, res) => {
 app.get('/', (req, res, next) => { 
     res.render('../public/views/index', {title: 'Home Page', css:['../public/css/style.css'], js:['../public/js/navBar.js']});
 });
-app.use('/', router);
 
 app.get('/project1', (req, res, next) => {
     res.render('../public/views/partials/project1', {title: 'Data Structures', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
@@ -53,4 +52,4 @@ app.get('/project4', (req, res, next) => {
 
 // app.listen(3000);
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 3000);
