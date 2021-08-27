@@ -255,7 +255,8 @@ padding-top: 5em;
 /* ===== MY WORK ===== */
 .my-work
 {
-    background-image: url(../images/KeyBoard.png);
+    background-image: url(../images/keyboard.png);
+    /* background-image: url(../images/AboutMeFaded.png); */
     background-size: cover;
 }
 
