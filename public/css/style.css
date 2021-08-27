@@ -16,8 +16,8 @@
     --fw-bold: 900;
 
     --color-light:  #f1eef5c5;
-    --color-light-transparent: #f1eef594;
-    --color-darker-transparent: #f1eef5ad;
+    --color-light-transparent: #f1eef5ab;
+    --color-darker-transparent: #f1eef5c5;
     --color-dark: #6d6b6b;
     --color-accent: #c4acf1d7;
     --color-accent2: rgba(67, 209, 214, 0.74);
@@ -86,6 +86,16 @@ nav
     font-family: var(--ff-secondary);
 }
 
+/* ===== NAV BAR ===== */
+.navbar-brand
+{
+    padding-left: 2em;
+}
+
+.nav-item
+{
+    padding-left: 2em;
+}
 
 /* ===== SECTIONS ===== */
 section
@@ -256,7 +266,6 @@ padding-top: 5em;
 .my-work
 {
     background-image: url(../images/keyboard.png);
-    /* background-image: url(../images/AboutMeFaded.png); */
     background-size: cover;
 }
 
@@ -303,6 +312,7 @@ padding-top: 5em;
 	transform-origin: bottom;
 	transform: scaleY(0);
 	transition: all .4s ease-out;
+    border-radius: 10px;
 }
 .click:hover::before
 {
@@ -361,10 +371,18 @@ padding-top: 5em;
 }
 .contact__list
 {
-    padding-top: 4em;
-    padding-left: 12em;
+        /* padding-top: 4em;
+        padding-left: 12em; */
+        align-content: center;
 }
 
+
+/* ===== CONTACT ME ===== */
+.footer
+{
+    text-align: center;
+    padding-bottom: 3em;
+}
 
 
 

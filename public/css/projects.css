@@ -40,6 +40,17 @@ body
     text-align: center;
 }
 
+/* ===== NAV BAR ===== */
+.navbar-brand
+{
+    padding-left: 2em;
+}
+
+.nav-item
+{
+    padding-left: 2em;
+}
+
 
 /* ===== Sections ===== */
 .title

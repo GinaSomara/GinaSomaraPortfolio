@@ -31,24 +31,24 @@ app.get("/static", (req, res) => {
 // app.use('/');
 //===== .GET PAGES =====//
 app.get('/', (req, res, next) => { 
-    res.render('../public/views/index', {title: 'Home Page', css:['../public/css/style.css'], js:['../public/js/navBar.js']});
+    res.render('../public/views/index', {title: 'Gina Somara Portfolio', css:['../public/css/style.css'], js:['../public/js/navBar.js']});
 });
 // app.use('/', router);
 
 app.get('/project1', (req, res, next) => {
-    res.render('../public/views/partials/project1', {title: 'Data Structures', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
+    res.render('../public/views/partials/project1', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
 app.get('/project2', (req, res, next) => {
-    res.render('../public/views/fountainWebsite/html/home', {title: 'The Fountain', css:['../public/css/fountainWebsite/home.css']});
+    res.render('../public/views/fountainWebsite/html/home', {title: 'Gina Somara Project', css:['../public/css/fountainWebsite/home.css']});
 });
 
 app.get('/project3', (req, res, next) => {
-    res.render('../public/views/partials/project3', {title: 'This Portfolio', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
+    res.render('../public/views/partials/project3', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
 app.get('/project4', (req, res, next) => {
-    res.render('../public/views/partials/project4', {title: 'Dictionary', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
+    res.render('../public/views/partials/project4', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
 
