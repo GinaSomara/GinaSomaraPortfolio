@@ -28,7 +28,7 @@ app.get("/static", (req, res) => {
 });
 
 
-app.use('/');
+// app.use('/');
 //===== .GET PAGES =====//
 app.get('/', (req, res, next) => { 
     res.render('../public/views/index', {title: 'Home Page', css:['../public/css/style.css'], js:['../public/js/navBar.js']});
