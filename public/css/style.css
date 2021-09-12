@@ -100,7 +100,7 @@ nav
 /* ===== SECTIONS ===== */
 section
 {
-    padding: 5em 2em;
+    padding: 5em 2em 0em 2em;
 }
 
 .section__title 
@@ -136,6 +136,7 @@ section
     font-family: var(--ff-secondary);
     margin-bottom: 0.4em;
     font-weight: var(--fw-reg);
+    padding-right: 15px;
 }
 .section__subtitle--aboutMe,
 .section__subtitle--work,
@@ -201,13 +202,25 @@ padding-top: 5em;
 
 .resume
 {
-    background-color: var(--color-accent2);   
+    /* content setup */
+    text-align: center;
+    display: block;
     padding: .25em 3em;
+    margin-left: 55%;
+    margin-right: auto;
+    margin-bottom: 2em;
+    width: 20%;
+    background-color: var(--color-light);
+    border-style: none solid solid none;
+    border-width: 1px;
+    border-radius: 7px;
+    border-color:var(--color-dark);
+    /* typography aesthetics */
+    color: black;
     font-weight: var(--fw-reg);
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     text-decoration: none;
-    color: black;
     /* for transition */
     position: relative;
     transition: all .4s ease-out;
@@ -221,7 +234,9 @@ padding-top: 5em;
 	/* display: block;  */
 	width: 100%;
 	height: 100%;
-	background-color: #c4acf1ab;
+    background-image: linear-gradient(to right, var(--color-accent2), #c4acf183,
+    #c4acf183, var(--color-accent2));
+    border-radius: 7px;
     font-weight: bold;
 	transform-origin: left;
 	transform: scaleY(0);
@@ -232,10 +247,10 @@ padding-top: 5em;
     transform: scaleY(1);
     color: black;
 }
-.resume a
+/* .resume a
 {
     color: black;
-}
+} */
 
 
 @media (min-width: 600px)
