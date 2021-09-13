@@ -29,7 +29,7 @@
             <li><u>Linking Files -</u>-  I did not realize that when using template< typename ItemType > in C++, it is necessary to #include not only the .h header file, but also the .cpp file as well or there
             will be linker errors.</li>
 
-            <li><u>Pointers -</u>- When changing over from raw pointers to smart pointers, I used more shared_pointers that I would prefer to in order to have multiple pointers pointing to the head at one time.
+            <li><u>Pointers -</u>- When changing over from raw pointers to smart pointers, I used more shared_pointers that I would prefer to in order to have multiple pointers pointing to the head at one time. I believe this creates a potential security risk.
             *** UPDATE: To solve this, a version with unique_pointers only is coming soon :) </li>
 
             <li><u>CMake -</u>- When downloading the template of this project (*see bottom of page for more info*), I added in more files than what was originally provided. After many failed build attempts, I realized the importance of the CMake and understood that all added files need to be included in the add_executable(). </li>
