@@ -51,7 +51,11 @@ app.get('/python-interpreter', (req, res, next) => {
     res.render('../public/views/partials/python-interpreter', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
+app.get('/cryptocurrency-wallet', (req, res, next) => {
+    res.render('../public/views/partials/cryptocurrency-wallet', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
+});
 
-// app.listen(3000);
+
+// app.listen(3000);   // localhost:3000
 
 app.listen(process.env.PORT || 3000);

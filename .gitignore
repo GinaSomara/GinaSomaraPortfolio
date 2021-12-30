@@ -4,3 +4,6 @@ node_modules
 .gitignore
 public/documents/.DS_Store
 public/images/.DS_Store
+.DS_Store
+public/.DS_Store
+public/documents/.DS_Store
