@@ -1,1 +1,6 @@
 node_modules
+.DS_Store
+.DS_Store
+.gitignore
+public/documents/.DS_Store
+public/images/.DS_Store
