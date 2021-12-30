@@ -35,8 +35,8 @@ app.get('/', (req, res, next) => {
 });
 // app.use('/', router);
 
-app.get('/data-structures', (req, res, next) => {
-    res.render('../public/views/partials/data-structures', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
+app.get('/tank-wars', (req, res, next) => {
+    res.render('../public/views/partials/tank-wars', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
 app.get('/the-fountain', (req, res, next) => {
@@ -48,7 +48,7 @@ app.get('/this-portfolio', (req, res, next) => {
 });
 
 app.get('/dictionary', (req, res, next) => {
-    res.render('../public/views/partials/dictionary', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
+    res.render('../public/views/partials/python-interpreter', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
 

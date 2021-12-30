@@ -1,0 +1,34 @@
+<body>
+    
+    <h1 class="title"><strong>~ Python Interpreter ~</strong></h1>
+
+    <div class="sub-section">
+        
+        <p><pre>         Look @ the code:   <a href="https://github.com/GinaSomara/interpreter" target="_blank"> [JAVA code]</a>
+        </pre> </p> <hr>  <br>
+
+
+        <h3><u>~ About this project ~</u></h3>
+        <p> This project was focused on an organized software design that allows for a complex Interpreter program whilst keeping the code easy to understand. The project has multiple Python txt files available for testing. The idea behind the Statement / Expressions interfaces is that by sorting lines of code between these two generalized structures, the organization and implementation efficiency of the program is also easily understandable; therefore future maintenance and additional features/extensions can be added without disrupting the original software design. <br> It was really fun to work with the hierarchy of Statements / Expressions because it drastically improved upon my understanding of the 4 major OOP concepts. In addition, it was very interesting to gather a deep understanding of how an Interpreter language works behind the scenes. The designing process of this project was also extremely fun because the amount of extensibility that an interpreter program offers/can offer is boundless; keeping this in mind durning development was educational for myself because it enhanced my software development apprehension. </p>
+    </div>
+
+    <div class="sub-section">
+        <h3><u>~ Obstacles I faced && Overcoming those Obstacles  ~</u></h3>
+        <p><ul>
+
+            <li><u>Interpreter Class::</u> The Interpreter Class is the main driver of the program. The first largest issue I had was working on design/understanding of how the flow would work most efficiently and understandably -> i.e: "One the lines are read, how does this class sort them and how much sorting should this class be doing?".
+            Ultimately the final decision was that Interpreter would break down the txt file lines based on the type of statement and its respective spacing. i.e, A While (loop) Statement would be stored as a general statement obj with the indented lines under it all included. From there, those objects needed to be further organized. (See Parser Class)</li>
+
+             <br>
+
+            <li><u>Parser Class::</u> The Parser Class is a key feature in the program. The main Interpreter Class sorts the code into generalized Statement objects, and then passes it to this class. In order to sort this information systematically with scalability as an essentially focus, Parser needed to recognize the received parameters, and then match them with their corresponding object type. A large struggle was designing and pinpointing the specific job of Parser -> i.e: "At what process was the code ready to be parsed? Should parser pass the raw information straight off the class? Is Parser stateless or can its process somehow improve by utilizing previous data"? 
+            After the finalization of numerous ideas, the algorithm of Parser would to simply sort the objects into Expressions; some Expression objects being stored in a Statement object. The respective classes would then would handle the duration of the object's processing. </li>
+        </ul></p>        
+
+
+
+        <br><br><br><br>
+        <p>Project Completion ON: October 2021</p>
+    </div>
+   
+</body>
