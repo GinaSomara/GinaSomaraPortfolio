@@ -47,7 +47,7 @@ app.get('/this-portfolio', (req, res, next) => {
     res.render('../public/views/partials/this-portfolio', {title: 'Gina Somara Portfolio', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
-app.get('/dictionary', (req, res, next) => {
+app.get('/python-interpreter', (req, res, next) => {
     res.render('../public/views/partials/python-interpreter', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
