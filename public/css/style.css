@@ -114,11 +114,15 @@ section
     text-align: center;
     padding-top: 5em;
 }
-.my-work,
+.my-work
+{
+    padding-top: 4em !important;
+}
+/* .my-work,
 .contact-me
 {
 padding-top: 5em;
-}
+} */
 
 .separation-bar
 {
@@ -131,7 +135,7 @@ padding-top: 5em;
 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 5em;
 }
 
 .resume

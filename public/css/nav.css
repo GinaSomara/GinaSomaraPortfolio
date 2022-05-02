@@ -1,5 +1,5 @@
 /* =====      NAV SECTION      ===== */
-ul 
+.nav-bar 
 {
     list-style: none;
     background-color: #a2abb1;
@@ -11,7 +11,7 @@ ul
     font-family: 'Montserrat', sans-serif !important;
 }
 
-li
+.nav-bar li
 {
     float: left;
     position: relative;

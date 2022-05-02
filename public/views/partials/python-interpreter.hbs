@@ -18,12 +18,12 @@
         <h3><u>~ Obstacles I faced && Overcoming those Obstacles  ~</u></h3>
         <p><ul>
 
-            <li><u>Interpreter Class::</u> The Interpreter Class is the main driver of the program. The first largest issue I had was working on design/understanding of how the flow would work most efficiently and understandably -> i.e: "Once the lines are read, how does this class sort them and how much sorting should this class be doing?".
+            <li><u>Interpreter Class-</u>- The Interpreter Class is the main driver of the program. The first largest issue I had was working on design/understanding of how the flow would work most efficiently and understandably -> i.e: "Once the lines are read, how does this class sort them and how much sorting should this class be doing?".
             Ultimately the final decision was that Interpreter would break down the txt file lines based on the type of statement and its respective spacing. i.e, A While (loop) Statement would be stored as a general statement obj with the indented lines under it all included. From there, those objects needed to be further organized. (See Parser Class)</li>
 
              <br>
 
-            <li><u>Parser Class::</u> The Parser Class is a key feature in the program. The main Interpreter Class sorts the code into generalized Statement objects, and then passes it to this class. In order to sort this information systematically with scalability as an essentially focus, Parser needed to recognize the received parameters, and then match them with their corresponding object type. A large struggle was designing and pinpointing the specific job of Parser -> i.e: "At what process was the code ready to be parsed? Should parser pass the raw information straight off the class? Is Parser stateless or can its process somehow improve by utilizing previous data"? 
+            <li><u>Parser Class-</u>- The Parser Class is a key feature in the program. The main Interpreter Class sorts the code into generalized Statement objects, and then passes it to this class. In order to sort this information systematically with scalability as an essentially focus, Parser needed to recognize the received parameters, and then match them with their corresponding object type. A large struggle was designing and pinpointing the specific job of Parser -> i.e: "At what process was the code ready to be parsed? Should parser pass the raw information straight off the class? Is Parser stateless or can its process somehow improve by utilizing previous data"? 
             After the finalization of numerous ideas, the algorithm of Parser would to simply sort the objects into Expressions; some Expression objects being stored in a Statement object. The respective classes would then would handle the duration of the object's processing. </li>
         </ul></p>        
 
