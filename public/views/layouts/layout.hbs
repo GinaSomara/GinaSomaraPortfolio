@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>{{title}}</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" 
+
+    <link rel="stylesheet" href="/public/css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" 
         integrity="sha512-Yu3tDzlofwBycOX5qb6K4tGJKGD72LA/9ckyioo8plGOdLwIeESQgo+KY4M+gvBJvDguqYeweLVTIn+S/9ZC/Q==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;900&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-    
+    {{!-- <script type="text/javascript" src="Scripts/bootstrap.min.js"></script> --}}
+
     {{#each css}}
         <link rel="stylesheet" href="{{this}}">
     {{/each}}
@@ -29,33 +30,26 @@
 <body>
 
      {{! -- NAV bar -- }}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/"><strong> ~ Gina's Portfolio ~ </strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+  <ul class="nav-bar">
 
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home Page<span class="sr-only">(current)</span></a>
-      </li>
+    <li><a id="nav-strong" href="/"><strong> ~ Gina's Portfolio ~ </strong></a></li>
+    <li><a href="/">Home Page</a></li>
+    <li class="dropdown">
+      <a class="dropbtn">Projects</a>
+        <div class="dropdown-content">
+            <a href="/this-portfolio">This Portfolio</a>
+            <a href="/python-interpreter">Python Interpreter</a>
+            <a href="/tank-wars">Tank Wars</a>
+            <a href="/website">Informative Website</a>
+            <a href="/cryptocurrency-wallet">Cryptocurrency Wallet</a>
+            <hr>
+            <a href="https://medium.com/@ginasomara15" target="_blank">Bitcoin Technology</a>
+        </div>
+    </li>
+      <li><a href="/#contact-me-id">Contact Me</a></li>
+    <li><a href="/#about-me-id">About Me</a></li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="/#my-work-id">Projects</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="/#about-me-id">About Me</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="/#contact-me-id">Contact Me</a>
-      </li>
-
-    </ul>
-  </div>
-</nav>
+  </ul>
     {{! -- END NAV bar -- }}
 
 
