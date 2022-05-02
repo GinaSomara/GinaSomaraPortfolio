@@ -39,8 +39,8 @@ app.get('/tank-wars', (req, res, next) => {
     res.render('../public/views/partials/tank-wars', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
-app.get('/the-fountain', (req, res, next) => {
-    res.render('../public/views/partials/the-fountain', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
+app.get('/website', (req, res, next) => {
+    res.render('../public/views/partials/website-proj', {title: 'Gina Somara Project', css:['../public/css/projects.css'], js:['../public/js/navBar.js']});
 });
 
 app.get('/this-portfolio', (req, res, next) => {

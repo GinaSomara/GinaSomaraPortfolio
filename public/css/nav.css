@@ -8,7 +8,7 @@ ul
     background-color: rgba(248,249,250,1);
     margin-bottom: 0px !important;
     margin-right: 20px;
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 li
@@ -35,9 +35,8 @@ ul a
 
 ul a:hover
 {
-    background-color: rgba(129, 129, 235, 0.767);
+    background-color: rgba(218,209,243,255);
     padding: 10px 16px;
-    color: white;
     border-radius: 3px;
     transition: 0.4s;
 }
@@ -64,14 +63,27 @@ ul a:hover
     display: none;
     position: absolute;
 }
+.dropdown-content a:hover
+{
+    background-color: rgb(236, 232, 247);
+    /* padding: 10px 16px;
+    border-radius: 3px; */
+    transition: 0.4s;
+}
 
 .dropdown:hover .dropdown-content
 {
     display: block;
     position: absolute;
-    background-color: rgb(208, 208, 250);
+    background-color: rgba(218,209,243,255);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 7px;
     text-align: center;
     width:max-content;
+}
+
+#nav-strong
+{
+    font-weight: 500;
+    color: #6d6b6b;
 }
